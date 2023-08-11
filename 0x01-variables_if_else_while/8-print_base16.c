@@ -11,4 +11,4 @@ putchar(num);
 for (num = 97; num < 103; num++)
 putchar(num);
 putchar('\n');
-return (0);}
+return (0); }
