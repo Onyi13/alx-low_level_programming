@@ -9,6 +9,6 @@ int main(void)
 {
 char c;
 for (c = 'a'; c <= 'z'; c++)
-putchar("%C\n");
+putchar("%C\n",c);
 return (0);
 }
