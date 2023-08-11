@@ -8,10 +8,10 @@
  */
 int main(void)
 {
-char c, d;
+char c;
 for (c = 'a'; c <= 'z'; c++)
-for (d = 'A'' d <= 'Z'; d++)
-putchar("%c""%c", c,d);
+for (c = 'A'; d <= 'Z'; c++)
+putchar(c);
 putchar('\n');
 return (0);
 }
