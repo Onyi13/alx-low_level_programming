@@ -1,15 +1,14 @@
 #include <stdio.h>
 /**
- * main - Prints the alphabet in lowercase
- * and lower case
- * Description: This program will print
- * the alphabet in lowercase using only putchar
+ * main - Prints the alphabet in lowercase, then in uppercase
+ * Description: This program prints the alphabet using putchar
  * Return: 0
  */
 int main(void)
 {
 char c;
 for (c = 'a'; c <= 'z'; c++)
+putchar(c);
 for (c = 'A'; c <= 'Z'; c++)
 putchar(c);
 putchar('\n');
