@@ -2,6 +2,13 @@
 #include <stdlib.h>
 #include <time.h>
 /* betty style doc for function main goes there */
+/**
+ * main - Determines whether a number is positive, negative, or zero
+ *
+ * Description: Uses the rand function and prints out whether
+ * the generated number is positive, negative, or zero
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 int n;
