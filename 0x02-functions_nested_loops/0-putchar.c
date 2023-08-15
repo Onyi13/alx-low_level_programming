@@ -1,9 +1,14 @@
-#include <stdio.h>
+#include "main.h"
 /**
  * main - Entry point
- * Description: Prints "_putchar" followed by a new line
- * Return: 0 if successful
+ * 
+ * Return: 0 on success
  */
 int main(void)
-{printf("_putchar\n");
+{char str[] = "_putchar";
+int i = 0;
+while (str[i])
+{_putchar(str[i]);
+i++; }
+_putchar('\n');
 return (0); }
