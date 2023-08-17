@@ -7,3 +7,11 @@ void print_numbers(void)
 for (num = 0; num < 10; num++)
 {_putchar(num + '0'); }
 _putchar('\n'); }
+/**
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
+int main(void)
+{print_numbers();
+return (0); }
