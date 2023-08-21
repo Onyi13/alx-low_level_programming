@@ -6,7 +6,8 @@
  * to print each character to the standard output, then prints a new line.
  */
 void _puts(char *str)
-{while (*str)
+{
+while (*str)
 {putchar(*str);
 str++; }
 putchar('\n'); }
