@@ -8,11 +8,9 @@ char *rot13(char *s)
 {int i = 0;
 while (s[i])
 {
-if ((s[i] >= 'A' && s[i] <= 'Z') || (s[i] >= 'a' && s[i] <= 'z'))
-{
-if ((s[i] > 'M' && s[i] <= 'Z') || (s[i] > 'm' && s[i] <= 'z'))
-{s[i] -= 13; }
-else
-{s[i] += 13; }}
+if (s[i] >= 'A' && s[i] <= 'Z')
+{s[i] = 'A' + ((s[i] - 'A' + 13) % 26);}
+else if (s[i] >= 'a' && s[i] <= 'z')
+{s[i] = 'a' + ((s[i] - 'a' + 13) % 26); }
 i++; }
 return (s); }
