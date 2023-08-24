@@ -9,10 +9,11 @@ char *leet(char *s)
 char letters[] = "aAeEoOtTlL";
 char numbers[] = "4433007711";
 while (s[i])
-{for (int j = 0; letters[j]; j++)
 {
-if (s[i] == letter[j]) }
-s[i] = numbers[j];
+for (int j = 0; letters[j]; j++)
+{
+if (s[i] == letters[j])
+{s[i] = numbers[j];
 break; }}
 i++; }
 return (s); }
