@@ -6,14 +6,13 @@
  */
 char *rot13(char *s)
 {int i = 0;
-char alphabet[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-char rotated[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 while (s[i])
 {
-for (int j = 0; alphabet[j]; j++)
+if ((s[i] >= 'A' && s[i] <= 'Z') || (s[i] >= 'a' && s[i] <= 'z'))
 {
-if (s[i] == alphabet[j])
-{s[i] = rotated[j];
-break; }}
+if ((s[i] > 'M' && s[i] <= 'Z') || (s[i] > 'm' && s[i] <= 'z'))
+{s[i] -= 13; }
+else
+{s[i] += 13; }}
 i++; }
-return s; }
+return (s); }
