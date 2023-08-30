@@ -14,12 +14,13 @@ if (root * root > num)
 {return (-1); }
 return (find_root(num, root + 1)); }
 /**
- * _sqrt_recursion -
- * Returns the natural square root of a number.
+ * _sqrt_recursion - Returns the natural square root
+ * of a number.
  * @n: The number to find the square root of.
  * Return: The natural square root, or -1 if none.
  */
 int _sqrt_recursion(int n)
-{if (n < 0)
+{
+if (n < 0)
 {return (-1); }
 return (find_root(n, 0)); }
