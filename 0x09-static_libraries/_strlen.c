@@ -1,5 +1,4 @@
 #include "main.h"
-#include <unistd.h>
 /**
  * _putchar - Writes the character c to stdout.
  * @c: The character to be written.
@@ -7,5 +6,7 @@
  * the number of characters written.
  * Otherwise, it returns a negative value.
  */
-int _putchar(char c) 
-{return (write(1, &c, 1)); }
+int _strlen(char *s) {
+int len = 0;
+while (*s++) len++;
+return (len); }
