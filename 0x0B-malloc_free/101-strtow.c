@@ -11,7 +11,7 @@ while (str[i])
 if (str[i] != ' ' && (str[i + 1] == ' ' || str[i + 1] == '\0'))
 {count++; }
 i++; }
-return count; }
+return (count); }
 /**
  * strtow - splits a string into words
  * @str: the string to split
