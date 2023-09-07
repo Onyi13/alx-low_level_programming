@@ -23,10 +23,10 @@ concat = malloc(len1 + len2 + 1);
 else
 concat = malloc(len1 + n + 1);
 if (!concat)
-return NULL;
+return (NULL);
 for (i = 0; s1[i]; i++)
 concat[i] = s1[i];
 for (j = 0; j < len2 && j < n; j++, i++)
 concat[i] = s2[j];
 concat[i] = '\0';
-return concat; }
+return (concat); }
