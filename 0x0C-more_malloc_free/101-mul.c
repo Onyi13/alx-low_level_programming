@@ -1,4 +1,3 @@
-#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 /**
@@ -11,13 +10,13 @@ while (*str)
 if (*str < '0' || *str > '9')
 return (0);
 str++; }
-return (1)i;
+return (1); }
 /**
 * Prints error and exits program.
 */
 void error_exit(void)
 {printf("Error\n");
-exit(98);
+exit(98); }
 /**
 * Main function.
 */
