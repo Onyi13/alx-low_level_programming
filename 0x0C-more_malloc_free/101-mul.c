@@ -11,16 +11,10 @@ while (*str)
 if (*str < '0' || *str > '9')
 return (0);
 str++; }
-return (1); }
-/**
-* Prints error and exits program.
-*/
+return (1);
 void error_exit(void)
 {printf("Error\n");
-exit(98); }
-/**
-* Main function.
-*/
+exit(98);
 int main(int argc, char *argv[])
 {long num1, num2;
 if (argc != 3)
