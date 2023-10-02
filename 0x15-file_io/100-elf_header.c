@@ -7,7 +7,7 @@
 * ELF header at the start of an ELF file.
 */
 int main(int argc, char **argv)
-{int fd;
+{int fd, i;
 unsigned char e_ident[16];
 if (argc != 2)
 {fprintf(stderr, "Usage: %s elf_filename\n", argv[0]);
@@ -25,7 +25,8 @@ if (e_ident[0] != 0x7F || e_ident[1] != 'E' || e_ident[2] != 'L' || e_ident[3] !
 close(fd);
 exit(98); }
 printf("Magic:   ");
-for (int i = 0; i < 16; i++)
+i = 0;
+for (; i < 16; i++)
 printf("%02x ", e_ident[i]);
 printf("\n");
 close(fd);
